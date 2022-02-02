@@ -1,0 +1,14 @@
+let product = [
+  { apple: 2357, quantity: 1 },
+  { apple: 256435, quantity: 2 },
+  { apple: 23674, quantity: 4 },
+  { apple: 673657, quantity: 5 },
+  { apple: 347, quantity: 6 },
+];
+let sum = 0;
+for (let products of product) {
+  let result = products.apple * products.apple;
+  // result = result + sum;
+  sum = sum + result;
+}
+console.log(sum);
