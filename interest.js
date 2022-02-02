@@ -1,59 +1,6 @@
-// ১. তোমাকে ফাংশনের ইনপুট হিসেবে সেলসিয়াস দিবে। তুমি ক্যালকুলেশন করে তাপমাত্রা ফারেনহাইট এ কনভার্ট করে সেটার আউটপুট রিটার্ন করবে
 
-// Multiply the °C temperature by 1.8. Add 32 to this number. This is the answer in °F.
 
-// °F = (°C × 9/5) + 32
 
-// It's just as easy to convert Fahrenheit to Celcius;
-
-// °C = (°F − 32) x 5/9
-
-/*celcius to fahranheit
-
-// function cel(fer){
-//     var nam= (fer*9/5)+32
-//     return nam
-// }
-// console.log(cel(56));
-
-*/
-// ২. একইভাবে উল্টা হিসাব করবে। যাতে তোমাকে ফারেনহাইট হিসেবে তাপমাত্রা দিলে সেটাকে সেলসিয়াস এ কনভার্ট করে আউটপুট দিবে।
-//
-/*Fahrenheit to Celcius
-
-function far(cel){
-    var nam=(cel-32)*5/9
-    return nam
-}
-console.log(far(132));
-
-*/
-
-// ৩. কেউ ১০০ এর মধ্যে কত মার্ক্স্ পেয়েছে সেটা তোমাকে বলে দিবে। তুমি একটা ফাংশন দিয়ে বলে দিবে সে এ+ পাবে নাকি অন্য কোন গ্রেড পাবে।
-
-// grade system
-
-// let number = 45;
-// function grade(number) {
-//   if (number >= 80 && number <= 100) {
-//     console.log(number + " Is your marks and you got A+");
-//   } else if (number >= 70 && number <= 79) {
-//     console.log(number + " Is your marks and you got A");
-//   } else if (number >= 60 && number <= 69) {
-//     console.log(number + " Is your marks and you got A-");
-//   } else if (number >= 50 && number <= 59) {
-//     console.log(number + " Is your marks and you got B");
-//   } else if (number >= 40 && number <= 49) {
-//     console.log(number + " Is your marks and you got C");
-//   } else if (number >= 33 && number <= 39) {
-//     console.log(number + " Is your marks and you got D");
-//   } else if (number > 100) {
-//     console.log("Sorry! you entired wrong");
-//   } else {
-//     console.log("Sorry!!!! you fail in the exam");
-//   }
-// }
-// grade(39);
 
 // ৪. সুদের হিসাব করবে। জাস্ট হিসাব কেমনে করতে হয়। সেই চিন্তায় করবে। সুদ ভালো না খারাপ সেটা এখন চিন্তা করার দরকার নাই। জাস্ট একটা ফর্মুলা থাকলে সেটা কিভাবে কোড এ লিখতে হয় সেই এঙ্গেল থেকে করার চেষ্টা করো।
 
@@ -71,27 +18,8 @@ console.log(far(132));
 // }
 // console.log(interest(100000,6,4));
 
-// odd even
 
-// function odd_even(number) {
-//   if (number % 2 == 0) {
-//     return number + " Is a odd number";
-//   } else {
-//     return number + " Is a even number ";
-//   }
-// }
-// console.log(odd_even(623));
 
-// leap_year
-
-// function leapyear(year){
-//     if(year%4==0 && year%100!=0 || year%400==0){
-//         return year + " is a leap year*******************"
-//     }else{
-//         return year + " is not a leapyear----------------"
-//     }
-// }
-// console.log(leapyear(2028));
 
 // swap
 
@@ -104,19 +32,7 @@ console.log(far(132));
 // let b=2
 // [a,b]=[b,a]
 
-// function odd(fnum, lnum) {
-//   if (fnum < lnum) {
-//     for (i = fnum; i <= lnum; i++) {
-//       if (i % 2 == 0) {
-//         console.log(i, "Is a odd number");
-//       }
-//       else{
-//           console.log(i, 'is a even number ');
-//       }
-//     }
-//   }
-// }
-// odd(78,100)
+
 
 // function greeting(parameterVariable) {
 //   // This line prints 'Hello, World!' to the console:
@@ -196,25 +112,3 @@ console.log(far(132));
 // }
 // console.log(project(6,4,'is a good website for practiccing programming'));
 
-function vowelsAndConsonants(s) {
-  const vowels = "aeiou";
-
-  var consonants = "";
-
-  for (var i = 0; i < s.length; i++) {
-    if (vowels.includes(s[i])) {
-      console.log(s[i]);
-    } else {
-      consonants += s[i] + "\n";
-    }
-  }
-
-  console.log(consonants.trim());
-}
-
-function main() {
-  const s = readLine();
-
-  vowelsAndConsonants(s);
-}
-vowelsAndConsonants()
