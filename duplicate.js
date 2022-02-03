@@ -42,5 +42,3 @@ function extra(duplicate) {
   return unique;
 }
 console.log("Dupilicate is: ", extra(duplicate));
-
-

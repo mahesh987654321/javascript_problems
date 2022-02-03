@@ -9,9 +9,12 @@
 // console.log(avg);
 
 let grades = [1, 2, 3, 4, 5, 6, 7,8,9,10];
-let total = 0;
-for (let i = 0; i < grades.length; i++) {
-  total += grades[i];
-}
-let avg = total / grades.length;
-console.log(avg);
+// let total = 0;
+// for (let i = 0; i < grades.length; i++) {
+//   total += grades[i];
+// }
+// let avg = total / grades.length;
+// console.log(avg);
+
+let grade=grades.pop()
+console.log(grade);
