@@ -26,3 +26,17 @@
   }
 }
 console.log("Smallest number is ", largest(56, 1, 4)); */
+
+function largest(number) {
+  let larg = 0;
+  for (let i = 0; i < number.length; i++) {
+    const element = number[i];
+    if (element > larg) {
+      larg = element;
+    }
+  }
+  return larg;
+}
+let nam = [1, 2, 3, 34, 54, 6, 7, 7, 56654, 54, 4, 4, 5];
+let add = largest(nam);
+console.log(add);

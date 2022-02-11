@@ -31,14 +31,24 @@ let duplicate = [
   "Tiger",
 ];
 
-function extra(duplicate) {
-  unique = [];
+// function extra(duplicate) {
+//   unique = [];
+//   for (let element of duplicate) {
+//     if (unique.indexOf(element) == -1) {
+//       unique.push(element);
+//     }
+//   }
+//   return unique;
+// }
+// console.log("Dupilicate is: ", extra(duplicate));
+
+function array(duplicate) {
+  let unique = [];
   for (let element of duplicate) {
-    console.log(element);
     if (unique.indexOf(element) == -1) {
       unique.push(element);
     }
   }
   return unique;
 }
-console.log("Dupilicate is: ", extra(duplicate));
+console.log(array(duplicate));
